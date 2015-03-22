@@ -1,0 +1,16 @@
+base:
+  version: VERSION
+  css:
+    theme:
+      stylesheets/styles.css: {}
+
+  js:
+    js/header.js: {}
+
+  dependencies:
+    - core/matchmedia
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
+    - core/jquery.intrinsic
+

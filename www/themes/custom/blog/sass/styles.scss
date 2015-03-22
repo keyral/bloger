@@ -1,0 +1,15 @@
+
+@import "compass";
+@import "partial/_reset";
+@import "partial/_variables";
+@import "partial/_mixing";
+@import "regions/header";
+//lib icon
+@import "../lib/Font-Awesome-master/css/font-awesome.min.css";
+
+.black {
+  color:$black;
+}
+
+
+
