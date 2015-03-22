@@ -13,10 +13,6 @@ use Drupal\Core\Form\FormStateInterface;
 class ContactFormDefault extends ConfigFormBase
 {
 
-
-
-
-
   /**
   * {@inheritdoc}
   */
@@ -34,12 +30,12 @@ class ContactFormDefault extends ConfigFormBase
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    $config = $this->config('blog_contact.contact_form_config');
+    //$config = $this->config('blog_contact.contact_form_config');
     $form['lol'] = array(
       '#type' => 'tel',
       '#title' => $this->t('lol'),
       '#description' => $this->t('lo'),
-      '#default_value' => $config->get('lol'),
+      '#default_value' => 'lol',
     );
 
     return parent::buildForm($form, $form_state);

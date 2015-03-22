@@ -4,4 +4,4 @@ blog_contact.contact_form:
     _form: '\Drupal\blog_contact\Form\ContactFormDefault'
     _title: 'ContactFormDefault'
   requirements:
-    _permission: 'access administration pages'
+    _permission: 'access content'
