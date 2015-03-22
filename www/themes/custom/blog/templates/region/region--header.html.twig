@@ -23,11 +23,17 @@
     <a class="cd-logo" href="#0"><img src="img/cd-logo.svg" alt="Logo"></a>
     <nav class="cd-nav">
         {{ menu_header }}
+        <ul class="cd-header-buttons">
+            <li><a id="ico-search" class="fa fa-search fa-2x black"></a></li>
+            <li><a id="ico-menu" class="fa fa-bars fa-2x black"></a></li>
+        </ul>
     </nav>
-    <ul class="cd-header-buttons">
-        <li><a class="fa fa-search fa-2x black"></a></li>
-        <li><a class="fa fa-bars fa-2x black"></a></li>
-    </ul>
+
+    <div id="search" class="">
+        {{ form_search }}
+
+    </div>
+
 </header>
 
 {% if content %}

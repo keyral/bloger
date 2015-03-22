@@ -9,10 +9,16 @@ use Drupal\Component\Utility\String;
 use Drupal\Component\Utility\Xss;
 use Drupal\Core\Template\Attribute;
 use Drupal\Core\Menu\MenuTreeParameters;
-
+use Drupal\search\Form\SearchBlockForm;
 
 
 function blog_preprocess_region(&$variables){
+
+  //appelle du form de recherche
+  $form = \Drupal::formBuilder()->getForm('Drupal\search\Form\SearchBlockForm');
+  $form['keys']['#attributes']['placeholder'] = t('Search') . ' ...';
+  $variables['form_search'] = $form;
+  //appel du menu
   $menu_tree = \Drupal::menuTree();
   $tree = $menu_tree->load('main', new MenuTreeParameters());
   $menu = $menu_tree->build($tree);

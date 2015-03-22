@@ -3,12 +3,15 @@
 @import "partial/_reset";
 @import "partial/_variables";
 @import "partial/_mixing";
-@import "regions/header";
+@import "regions/_header";
 //lib icon
 @import "../lib/Font-Awesome-master/css/font-awesome.min.css";
 
 .black {
   color:$black;
+}
+body{
+  background-color: $gray;
 }
 
 
