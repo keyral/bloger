@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains contact.module
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+
+function blog_contact_help($route_name, RouteMatchInterface $route_match)
+{
+  switch ($route_name) {
+    // Main module help for the contact module.
+    case 'help.page.contact':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('formulaire de contact personnel pour le site blog') . '</p>';
+      return $output;
+    break;
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+
+function blog_contact_theme()
+{
+  $theme = [];
+
+  return $theme;
+}
