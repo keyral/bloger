@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains blog_articles.module
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+
+function blog_articles_help($route_name, RouteMatchInterface $route_match)
+{
+  switch ($route_name) {
+    // Main module help for the blog_articles module.
+    case 'help.page.blog_articles':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Gestion des articles du blog') . '</p>';
+      return $output;
+    break;
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+
+function blog_articles_theme()
+{
+  $theme = [];
+
+  return $theme;
+}

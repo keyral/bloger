@@ -1,0 +1,16 @@
+blog_articles.default_controller_hello:
+  path: 'blog_articles/hello/{name}'
+  defaults:
+    _controller: '\Drupal\blog_articles\Controller\DefaultController::hello'
+    _title: 'blog_articles Title'
+  requirements:
+    _permission: 'access content'
+
+blog_articles.blog_listing_View:
+  path: 'home'
+  defaults:
+    _controller: '\Drupal\blog_articles\Controller\BlogListing::View'
+    _title: 'blog_articles Title'
+  requirements:
+    _permission: 'access content'
+

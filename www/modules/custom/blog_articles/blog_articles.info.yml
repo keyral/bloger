@@ -1,0 +1,5 @@
+name: blog_articles
+type: module
+description: Gestion des articles du blog
+core: 8.x
+package: Other
