@@ -7,10 +7,11 @@
 
 namespace Drupal\blog_contact\Form;
 
-use Drupal\Core\Form\ConfigFormBase;
+use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
 
-class ContactFormDefault extends ConfigFormBase
+class ContactFormDefault extends FormBase
 {
 
   /**
@@ -31,20 +32,66 @@ class ContactFormDefault extends ConfigFormBase
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
     //$config = $this->config('blog_contact.contact_form_config');
-    $form['lol'] = array(
-      '#type' => 'tel',
-      '#title' => $this->t('lol'),
-      '#description' => $this->t('lo'),
-      '#default_value' => 'lol',
+    $form['nom'] = array(
+      '#type' => 'textfield',
+      '#title' => $this->t('Nom'),
+      '#default_value' => '',
+    );
+    $form['prenom'] = array(
+      '#type' => 'textfield',
+      '#title' => $this->t('Prenom'),
+      '#default_value' => '',
+    );
+    $form['email'] = array(
+      '#type' => 'email',
+      '#title' => $this->t('E-Mail'),
+      '#default_value' => '',
     );
 
-    return parent::buildForm($form, $form_state);
+    $form['message'] = array(
+      '#type' => 'textarea',
+      '#title' => $this->t('Message'),
+      '#default_value' => '',
+    );
+
+    $form['submit'] = array(
+      '#type' => 'submit',
+      '#value' => t('Envoyer'),
+      '#button_type' => 'primary',
+      '#submit' => array(array($this, 'send')),
+      '#ajax' => array(
+        'callback' => array(get_class($this), 'send'),
+        'wrapper' => 'message-contact-form',
+      ),
+    );
+    $form['sender'] = array(
+      '#type' => 'textfield',
+      '#title' => '',
+      '#default_value' => '',
+      '#attributes' => array(
+        'style' => 'display:none'
+      )
+    );
+    $form['message_error'] = array(
+      '#type' => 'item',
+      '#markup' => 'lol_test',
+      '#prefix' => '<div id="message-contact-form">',
+      '#suffix' => '</div>'
+    );
+    $form['#theme'] = 'contact_form';
+   return $form;
   }
 
   /**
    * {@inheritdoc}
    */
   public function validateForm(array &$form, FormStateInterface $form_state) {
+    if ($form_state->getValue('email') == '') {
+      $form_state->setErrorByName(
+        'email',
+        $this->t("Veuillez renseigner votre adresse mail.")
+      );
+    }
     parent::validateForm($form, $form_state);
   }
 
@@ -60,4 +107,23 @@ class ContactFormDefault extends ConfigFormBase
     ->save();
     */
   }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function send(array &$form, FormStateInterface $form_state){
+    $debug = 1;
+    if(isset($form_state->values['sender'])){
+
+    }
+
+    return array(
+      '#type' => 'item',
+      '#markup' => 'lol proute',
+      '#prefix' => '<div id="message-contact-form">',
+      '#suffix' => '</div>'
+    );
+  }
+
+
 }

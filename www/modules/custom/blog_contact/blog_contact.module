@@ -30,7 +30,10 @@ function blog_contact_help($route_name, RouteMatchInterface $route_match)
 
 function blog_contact_theme()
 {
-  $theme = [];
+  $theme = array();
+  $theme['contact_form'] = array(
+    'render element' => 'form',
+  );
 
   return $theme;
 }

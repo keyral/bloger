@@ -25,10 +25,6 @@ class BlogListing extends ControllerBase {
     if(isset($listing)){
       return node_view_multiple($listing, "teaser");
     }
-    return [
-        '#type' => 'markup',
-        '#markup' => $this->t('Implement method: View')
-    ];
   }
 
 
@@ -37,6 +33,7 @@ class BlogListing extends ControllerBase {
     $query = \Drupal::entityQuery('node');
     $query->condition('type', 'articles');
     $query->condition('status', 1);
+    $query->sort('created', 'DESC');
     $query->range(0,10);
     $result = $query->execute();
     $debug = 1;

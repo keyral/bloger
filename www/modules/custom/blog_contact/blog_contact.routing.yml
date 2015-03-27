@@ -1,7 +1,0 @@
-blog_contact.contact_form:
-  path: '/blog_contact/settings/ContactFormDefault'
-  defaults:
-    _form: '\Drupal\blog_contact\Form\ContactFormDefault'
-    _title: 'ContactFormDefault'
-  requirements:
-    _permission: 'access content'

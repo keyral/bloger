@@ -1,0 +1,23 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ *
+ * @ingroup themeable
+ */
+#}
+
+    {{ form['nom'] }}
+    {{ form['prenom'] }}
+    {{ form['mail'] }}
+    {{ form['message'] }}
+    {{ form['submit'] }}
+    {{ form['message_error'] }}
+    {{ dump(form) }}
+  {{ children }}
