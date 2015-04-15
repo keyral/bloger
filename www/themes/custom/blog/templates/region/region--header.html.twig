@@ -17,10 +17,11 @@
 {% set classes = [
 'region',
 'region-' ~ region|clean_class,
+'cd-main-header',
 ] %}
 
-<header class="cd-main-header">
-    <a class="cd-logo" href="#0"><img src="img/cd-logo.svg" alt="Logo"></a>
+<header {{ attributes.addClass(classes) }}">
+    <a href="/"><img id="logo" src="/themes/custom/blog/images/K.jpg" alt="Logo"></a>
     <nav class="cd-nav">
         {{ menu_header }}
         <ul class="cd-header-buttons">
