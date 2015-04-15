@@ -1,8 +1,0 @@
-test1.default_controller_hello:
-  path: 'test1/hello/{name}'
-  defaults:
-    _controller: '\Drupal\test1\Controller\DefaultController::hello'
-    _title: 'test1 Title'
-  requirements:
-    _permission: 'access content'
-

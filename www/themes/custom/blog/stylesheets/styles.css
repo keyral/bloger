@@ -278,7 +278,13 @@ header.cd-main-header {
     height: 50px;
   }
 }
-/* line 19, ../sass/regions/_header.scss */
+/* line 18, ../sass/regions/_header.scss */
+header.cd-main-header #logo {
+  height: 64px;
+  display: inline-block;
+  padding: 8px;
+}
+/* line 24, ../sass/regions/_header.scss */
 header.cd-main-header nav {
   float: right;
   width: auto;
@@ -288,12 +294,12 @@ header.cd-main-header nav {
   top: 0;
   right: 0;
 }
-/* line 27, ../sass/regions/_header.scss */
+/* line 32, ../sass/regions/_header.scss */
 header.cd-main-header nav li {
   float: left;
   margin-left: 3em;
 }
-/* line 30, ../sass/regions/_header.scss */
+/* line 35, ../sass/regions/_header.scss */
 header.cd-main-header nav li a {
   position: relative;
   display: inline-block;
@@ -303,18 +309,18 @@ header.cd-main-header nav li a {
   color: #2e3233;
   text-decoration: none;
 }
-/* line 43, ../sass/regions/_header.scss */
+/* line 48, ../sass/regions/_header.scss */
 header.cd-main-header .cd-header-buttons {
   float: right;
   position: absolute;
   right: 0;
   top: 0;
 }
-/* line 49, ../sass/regions/_header.scss */
+/* line 54, ../sass/regions/_header.scss */
 header.cd-main-header .cd-header-buttons li {
   margin-left: 1em;
 }
-/* line 54, ../sass/regions/_header.scss */
+/* line 59, ../sass/regions/_header.scss */
 header.cd-main-header #search {
   opacity: 1;
   visibility: visible;
@@ -326,11 +332,11 @@ header.cd-main-header #search {
   display: none;
   background-color: #FFF;
 }
-/* line 64, ../sass/regions/_header.scss */
+/* line 69, ../sass/regions/_header.scss */
 header.cd-main-header #search.is-visible {
   display: block;
 }
-/* line 67, ../sass/regions/_header.scss */
+/* line 72, ../sass/regions/_header.scss */
 header.cd-main-header #search input {
   height: 120px;
   padding: 0 2em;
@@ -348,41 +354,250 @@ header.cd-main-header #search input {
   -o-appearance: none;
   appearance: none;
 }
-/* line 84, ../sass/regions/_header.scss */
+/* line 89, ../sass/regions/_header.scss */
 header.cd-main-header #search input::-webkit-input-placeholder {
   color: #c9cbc4;
 }
-/* line 87, ../sass/regions/_header.scss */
+/* line 92, ../sass/regions/_header.scss */
 header.cd-main-header #search input::-moz-placeholder {
   color: #c9cbc4;
 }
-/* line 90, ../sass/regions/_header.scss */
+/* line 95, ../sass/regions/_header.scss */
 header.cd-main-header #search input:-moz-placeholder {
   color: #c9cbc4;
 }
-/* line 93, ../sass/regions/_header.scss */
+/* line 98, ../sass/regions/_header.scss */
 header.cd-main-header #search input:-ms-input-placeholder {
   color: #c9cbc4;
 }
-/* line 96, ../sass/regions/_header.scss */
+/* line 101, ../sass/regions/_header.scss */
 header.cd-main-header #search input:focus {
   outline: none;
 }
-/* line 100, ../sass/regions/_header.scss */
+/* line 105, ../sass/regions/_header.scss */
 header.cd-main-header #search .form-actions {
   display: none;
 }
-/* line 105, ../sass/regions/_header.scss */
+/* line 110, ../sass/regions/_header.scss */
 header.cd-main-header #ico-menu {
   display: none;
 }
 
-/* line 10, ../sass/styles.scss */
+/* line 1, ../sass/regions/_footer.scss */
+footer {
+  background-color: #FFF;
+  color: #2e3233;
+  margin-top: 20px;
+}
+/* line 6, ../sass/regions/_footer.scss */
+footer ul {
+  list-style: none outside none;
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow: hidden;
+  position: relative;
+  width: 95%;
+}
+/* line 14, ../sass/regions/_footer.scss */
+footer ul li {
+  float: left;
+  padding: 20px 15px;
+  width: 42%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/* line 22, ../sass/regions/_footer.scss */
+footer ul li.links {
+  width: 16%;
+}
+/* line 27, ../sass/regions/_footer.scss */
+footer ul li ul li {
+  padding: 0;
+  width: 100%;
+}
+/* line 30, ../sass/regions/_footer.scss */
+footer ul li ul li a {
+  color: #2e3233;
+  float: right;
+  padding: 10px;
+}
+/* line 34, ../sass/regions/_footer.scss */
+footer ul li ul li a.fa-twitter:hover {
+  color: #55ACEE;
+}
+/* line 37, ../sass/regions/_footer.scss */
+footer ul li ul li a.fa-rss:hover {
+  color: #FF6600;
+}
+/* line 40, ../sass/regions/_footer.scss */
+footer ul li ul li a.fa-github:hover {
+  color: #4183c4;
+}
+/* line 43, ../sass/regions/_footer.scss */
+footer ul li ul li a.fa-linkedin:hover {
+  color: #FFF;
+  background-color: #0077B5;
+}
+/* line 53, ../sass/regions/_footer.scss */
+footer .item-footer {
+  float: left;
+  padding: 20px 15px;
+  width: 28%;
+  padding: 25px 0;
+}
+/* line 59, ../sass/regions/_footer.scss */
+footer .item-footer.links {
+  width: 9%;
+}
+/* line 63, ../sass/regions/_footer.scss */
+footer .item-footer.contact {
+  width: 37%;
+}
+/* line 67, ../sass/regions/_footer.scss */
+footer .menu_footer {
+  color: #2e3233;
+  height: 60px;
+  vertical-align: middle;
+  text-align: center;
+}
+/* line 72, ../sass/regions/_footer.scss */
+footer .menu_footer ul {
+  display: inline-block;
+}
+/* line 74, ../sass/regions/_footer.scss */
+footer .menu_footer ul:first-child {
+  padding-right: 50em;
+}
+
+/* line 4, ../sass/assets/_listing.scss */
+.listing-home h3 a {
+  text-decoration: none;
+}
+/* line 11, ../sass/assets/_listing.scss */
+.listing-home .field-node--field-tags ul.field-items li {
+  display: inline-block;
+}
+
+/* line 2, ../sass/assets/_all.scss */
+h1, h1 a, h2, h2 a, h3, h3 a {
+  margin: .2em 0 .6em;
+  line-height: 1.2;
+  text-transform: capitalize;
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-weight: bold;
+  font-size: 2.8125rem;
+  color: #383838;
+}
+
+/* line 13, ../sass/assets/_all.scss */
+a {
+  text-decoration: none;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+  color: #2e3233;
+}
+/* line 21, ../sass/assets/_all.scss */
+a:hover {
+  color: #c6463d;
+}
+
+/* line 26, ../sass/assets/_all.scss */
+input {
+  padding: 0;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  padding: 9px 16px;
+  line-height: 1.4;
+}
+/* line 37, ../sass/assets/_all.scss */
+input[type=submit] {
+  line-height: 0;
+  border: none;
+  background-color: #2e3233;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+/* line 46, ../sass/assets/_all.scss */
+input[type=submit]:hover {
+  background-color: #c6463d;
+}
+
+/* line 52, ../sass/assets/_all.scss */
+textarea {
+  padding: 0;
+  border: none;
+}
+
+/* line 2, ../sass/assets/_form_contact.scss */
+.contact-form {
+  overflow: hidden;
+}
+/* line 4, ../sass/assets/_form_contact.scss */
+.contact-form .form-type-textarea {
+  padding: 6px 16px;
+}
+/* line 7, ../sass/assets/_form_contact.scss */
+.contact-form input, .contact-form textarea {
+  border: none;
+  border-bottom: 1px solid #e2e3df;
+  height: 25px;
+  font-size: 16px;
+  font-size: 1rem;
+  color: #383838;
+  width: 100%;
+}
+/* line 15, ../sass/assets/_form_contact.scss */
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: none;
+}
+/* line 19, ../sass/assets/_form_contact.scss */
+.contact-form textarea {
+  height: 5rem;
+  resize: vertical;
+}
+/* line 23, ../sass/assets/_form_contact.scss */
+.contact-form input[type=submit] {
+  width: 30%;
+  float: right;
+  padding: 16px 16px;
+  color: #FFF;
+  font-weight: bold;
+}
+
+/* line 14, ../sass/styles.scss */
 .black {
   color: #2e3233;
 }
 
-/* line 13, ../sass/styles.scss */
+/* line 17, ../sass/styles.scss */
 body {
   background-color: #e2e3df;
+  color: #2e3233;
+}
+/* line 20, ../sass/styles.scss */
+body main {
+  margin-top: 20px;
+}
+/* line 22, ../sass/styles.scss */
+body main .layout-content {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding: 15px;
+  font-family: "Merriweather", georgia, serif;
+  font-size: 1.1rem;
+  line-height: 1.4;
 }

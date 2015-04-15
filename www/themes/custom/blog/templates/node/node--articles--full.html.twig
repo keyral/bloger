@@ -68,17 +68,28 @@
  * @ingroup themeable
  */
 #}
-<section{{ attributes.addClass('listing-home') }}>
+<article{{ attributes }}>
 
     {{ title_prefix }}
     {% if not page %}
-        <h3{{ title_attributes }}>
+        <h2{{ title_attributes }}>
             <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-        </h3>
+        </h2>
     {% endif %}
+    {{ title_suffix }}
+
+    {% if display_submitted %}
+        <footer>
+            {{ author_picture }}
+            <div{{ author_attributes }}>
+                {% trans %}Submitted by {{ author_name|passthrough }} on {{ date|passthrough }}{% endtrans %}
+                {{ metadata }}
+            </div>
+        </footer>
+    {% endif %}
+
     <div{{ content_attributes }}>
         {{ content }}
     </div>
 
-    {{ title_suffix }}
-</section>
+</article>

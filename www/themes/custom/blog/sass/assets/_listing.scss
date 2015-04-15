@@ -1,0 +1,23 @@
+//Page listing home page
+.listing-home {
+  h3 {
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .field-node--field-tags {
+    ul.field-items {
+      li {
+        display: inline-block;
+      }
+    }
+  }
+  ul.links {
+    float:right
+    a{
+
+    }
+  }
+
+}

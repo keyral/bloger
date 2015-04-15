@@ -15,6 +15,11 @@ header.cd-main-header {
   @include MediaQuery(mobile) {
     height: 50px;
   }
+  #logo {
+    height: 64px;
+    display: inline-block;
+    padding: 8px;
+  }
 
   nav {
     float:right;

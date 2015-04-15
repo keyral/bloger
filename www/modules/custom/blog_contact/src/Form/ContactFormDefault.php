@@ -34,24 +34,32 @@ class ContactFormDefault extends FormBase
     //$config = $this->config('blog_contact.contact_form_config');
     $form['nom'] = array(
       '#type' => 'textfield',
-      '#title' => $this->t('Nom'),
       '#default_value' => '',
+      '#attributes' => array(
+        'placeholder' => $this->t('Nom')
+      ),
     );
     $form['prenom'] = array(
       '#type' => 'textfield',
-      '#title' => $this->t('Prenom'),
       '#default_value' => '',
+      '#attributes' => array(
+        'placeholder' => $this->t('Prenom')
+      ),
     );
     $form['email'] = array(
       '#type' => 'email',
-      '#title' => $this->t('E-Mail'),
       '#default_value' => '',
+      '#attributes' => array(
+        'placeholder' => $this->t('E-Mail')
+      ),
     );
 
     $form['message'] = array(
       '#type' => 'textarea',
-      '#title' => $this->t('Message'),
       '#default_value' => '',
+      '#attributes' => array(
+        'placeholder' => $this->t('Message')
+      ),
     );
 
     $form['submit'] = array(
@@ -78,7 +86,7 @@ class ContactFormDefault extends FormBase
       '#prefix' => '<div id="message-contact-form">',
       '#suffix' => '</div>'
     );
-    $form['#theme'] = 'contact_form';
+    $form['#theme'] = 'contact_form'; //@TODO : voir comment faire un render children en twig
    return $form;
   }
 

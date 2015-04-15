@@ -1,0 +1,80 @@
+footer {
+  background-color: $white;
+  color: $black;
+  margin-top: 20px;
+
+  ul {
+    list-style: none outside none;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+    position: relative;
+    width: 95%;
+
+    li {
+      float: left;
+      padding: 20px 15px;
+      width: 42%;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+
+      &.links {
+        width: 16%;
+      }
+
+      ul {
+        li {
+          padding:0;
+          width:100%;
+          a {
+            color:$black;
+            float: right;
+            padding: 10px;
+            &.fa-twitter:hover {
+              color: #55ACEE;
+            }
+            &.fa-rss:hover {
+              color: #FF6600;
+            }
+            &.fa-github:hover {
+              color: #4183c4;
+            }
+            &.fa-linkedin:hover {
+              color: $white;
+              background-color: #0077B5;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .item-footer {
+    float: left;
+    padding: 20px 15px;
+    width: 28%;
+    padding: 25px 0;
+
+    &.links {
+    width: 9%;
+    }
+
+    &.contact {
+    width: 37%;
+    }
+  }
+  .menu_footer {
+    color: $black;
+    height: 60px;
+    vertical-align: middle;
+    text-align: center;
+    ul {
+      display: inline-block;
+      &:first-child {
+        padding-right: 50em;
+      }
+    }
+  }
+
+}

@@ -55,25 +55,3 @@ $settings['extension_discovery_scan_tests'] = TRUE;
  * using these parameters in a request to rebuild.php.
  */
 $settings['rebuild_access'] = TRUE;
-$databases['default']['default'] = array (
-  'database' => 'blog',
-  'username' => 'root',
-  'password' => 'morpheus',
-  'prefix' => '',
-  'host' => 'localhost',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
-$settings['hash_salt'] = 'CSOeqTuIcvqQ5MyZr2KYJ2dFDjJ6klS90bQSjlyTrFXfl-B0xhj6AE1J6s6JXzwh-ncQ3x7wlQ';
-$settings['install_profile'] = 'minimal';
-$config_directories['active'] = 'sites/default/files/config_kdhoCcMzQaCoiW_eiw5cE4r6Ph2g9EV_DBzbt4mIvm4OzrvgzE0MMAT5Cq1GAMrdlazwqawUvg/active';
-$config_directories['staging'] = 'sites/default/files/config_kdhoCcMzQaCoiW_eiw5cE4r6Ph2g9EV_DBzbt4mIvm4OzrvgzE0MMAT5Cq1GAMrdlazwqawUvg/staging';
-
-$settings['twig_debug'] = true;
-$settings['cache']['bins']['render'] = 'cache.backend.null';
-
-if (file_exists(__DIR__ . '/settings.local.php')) {
-   include __DIR__ . '/settings.local.php';
- }
-$settings['container_yamls'][] = __DIR__ . '/services.yml';

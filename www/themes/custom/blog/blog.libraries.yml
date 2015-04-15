@@ -3,9 +3,11 @@ base:
   css:
     theme:
       stylesheets/styles.css: {}
+      lib/crayon/crayon.min.css: {}
 
   js:
     js/header.js: {}
+    lib/crayon/crayon.min.js: {}
 
   dependencies:
     - core/matchmedia

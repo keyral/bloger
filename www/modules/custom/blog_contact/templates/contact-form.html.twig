@@ -12,12 +12,5 @@
  * @ingroup themeable
  */
 #}
-
-    {{ form['nom'] }}
-    {{ form['prenom'] }}
-    {{ form['mail'] }}
-    {{ form['message'] }}
-    {{ form['submit'] }}
-    {{ form['message_error'] }}
-    {{ dump(form) }}
-  {{ children }}
+<h3>{{'Contact'|t }}</h3>
+  {{ form }}
