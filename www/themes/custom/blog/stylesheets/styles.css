@@ -502,7 +502,7 @@ a {
 }
 /* line 21, ../sass/assets/_all.scss */
 a:hover {
-  color: #c6463d;
+  color: #CC5500;
 }
 
 /* line 26, ../sass/assets/_all.scss */
@@ -531,7 +531,7 @@ input[type=submit] {
 }
 /* line 46, ../sass/assets/_all.scss */
 input[type=submit]:hover {
-  background-color: #c6463d;
+  background-color: #CC5500;
 }
 
 /* line 52, ../sass/assets/_all.scss */

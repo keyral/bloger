@@ -3,7 +3,7 @@ base:
   css:
     theme:
       stylesheets/styles.css: {}
-      lib/crayon/crayon.min.css: {}
+      lib/crayon/crayon.min.css: { minified: true}
 
   js:
     js/header.js: {}
