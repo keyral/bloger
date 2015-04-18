@@ -5,8 +5,13 @@ h1, h1 a, h2, h2 a, h3, h3 a {
   text-transform: capitalize;
   font-family: "Open Sans", helvetica, arial, sans-serif;
   font-weight: bold;
-  font-size: 2.8125rem;
-  color: $grey_black;
+  font-size: 2.0125rem;
+  color: $gray_plomb;
+}
+h1, h1 a {
+  font-size: 2.2rem;
+  color : $orange;
+  border-bottom: $gray 2px solid;
 }
 
 //link
@@ -19,7 +24,7 @@ a {
   transition: all .2s linear;
   color:$black;
   &:hover {
-    color: $red;
+    color: $orange;
   }
 }
 
@@ -44,7 +49,7 @@ input {
     -o-transition: all .2s linear;
     transition: all .2s linear;
     &:hover {
-      background-color: $red;
+      background-color: $orange;
     }
   }
 }

@@ -474,9 +474,22 @@ footer .menu_footer ul:first-child {
 .listing-home h3 a {
   text-decoration: none;
 }
-/* line 11, ../sass/assets/_listing.scss */
+/* line 10, ../sass/assets/_listing.scss */
+.listing-home .field-node--field-tags .field-label {
+  text-transform: capitalize;
+}
+/* line 14, ../sass/assets/_listing.scss */
 .listing-home .field-node--field-tags ul.field-items li {
   display: inline-block;
+}
+/* line 19, ../sass/assets/_listing.scss */
+.listing-home ul.links {
+  width: 100%;
+  display: inline-block;
+}
+/* line 22, ../sass/assets/_listing.scss */
+.listing-home ul.links li {
+  float: right;
 }
 
 /* line 2, ../sass/assets/_all.scss */
@@ -486,11 +499,18 @@ h1, h1 a, h2, h2 a, h3, h3 a {
   text-transform: capitalize;
   font-family: "Open Sans", helvetica, arial, sans-serif;
   font-weight: bold;
-  font-size: 2.8125rem;
-  color: #383838;
+  font-size: 2.0125rem;
+  color: #5A5E6B;
 }
 
-/* line 13, ../sass/assets/_all.scss */
+/* line 11, ../sass/assets/_all.scss */
+h1, h1 a {
+  font-size: 2.2rem;
+  color: #CC5500;
+  border-bottom: #e2e3df 2px solid;
+}
+
+/* line 18, ../sass/assets/_all.scss */
 a {
   text-decoration: none;
   -webkit-transition: all .2s linear;
@@ -500,12 +520,12 @@ a {
   transition: all .2s linear;
   color: #2e3233;
 }
-/* line 21, ../sass/assets/_all.scss */
+/* line 26, ../sass/assets/_all.scss */
 a:hover {
   color: #CC5500;
 }
 
-/* line 26, ../sass/assets/_all.scss */
+/* line 31, ../sass/assets/_all.scss */
 input {
   padding: 0;
   border: none;
@@ -518,7 +538,7 @@ input {
   padding: 9px 16px;
   line-height: 1.4;
 }
-/* line 37, ../sass/assets/_all.scss */
+/* line 42, ../sass/assets/_all.scss */
 input[type=submit] {
   line-height: 0;
   border: none;
@@ -529,12 +549,12 @@ input[type=submit] {
   -o-transition: all .2s linear;
   transition: all .2s linear;
 }
-/* line 46, ../sass/assets/_all.scss */
+/* line 51, ../sass/assets/_all.scss */
 input[type=submit]:hover {
   background-color: #CC5500;
 }
 
-/* line 52, ../sass/assets/_all.scss */
+/* line 57, ../sass/assets/_all.scss */
 textarea {
   padding: 0;
   border: none;
@@ -561,13 +581,14 @@ textarea {
 /* line 15, ../sass/assets/_form_contact.scss */
 .contact-form input:focus, .contact-form textarea:focus {
   outline: none;
+  border-bottom: 1px #CC5500 solid;
 }
-/* line 19, ../sass/assets/_form_contact.scss */
+/* line 20, ../sass/assets/_form_contact.scss */
 .contact-form textarea {
   height: 5rem;
   resize: vertical;
 }
-/* line 23, ../sass/assets/_form_contact.scss */
+/* line 24, ../sass/assets/_form_contact.scss */
 .contact-form input[type=submit] {
   width: 30%;
   float: right;

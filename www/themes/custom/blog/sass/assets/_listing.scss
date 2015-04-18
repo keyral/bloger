@@ -7,6 +7,9 @@
   }
 
   .field-node--field-tags {
+    .field-label {
+      text-transform: capitalize;
+    }
     ul.field-items {
       li {
         display: inline-block;
@@ -14,9 +17,12 @@
     }
   }
   ul.links {
-    float:right
-    a{
-
+    width:100%;
+    display: inline-block;
+    li {
+      float:right;
+      a{
+      }
     }
   }
 
