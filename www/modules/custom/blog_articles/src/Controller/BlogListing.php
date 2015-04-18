@@ -36,7 +36,6 @@ class BlogListing extends ControllerBase {
     $query->sort('created', 'DESC');
     $query->range(0,10);
     $result = $query->execute();
-    $debug = 1;
 
     if(isset($result[1])){
       return $nodes = entity_load_multiple('node', $result);
