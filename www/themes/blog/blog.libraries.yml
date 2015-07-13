@@ -1,0 +1,17 @@
+base:
+  version: VERSION
+  css:
+    theme:
+      stylesheets/styles.css: {}
+
+  js:
+    js/header.js: {}
+    lib/crayon/crayon.min.js: {}
+
+  dependencies:
+    - core/matchmedia
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
+    - core/jquery.intrinsic
+

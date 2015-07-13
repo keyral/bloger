@@ -1,0 +1,49 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region div.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ *
+ * @ingroup themeable
+ */
+#}
+{% set classes = [
+'region',
+'region-' ~ region|clean_class,
+] %}
+
+<footer class="cd-main-header">
+
+    <ul>
+        <li class="block-footer">
+            <h3>{{'About'|t }}</h3>
+            <p> lorem ipsum lora le la loriaque lorem lorem ipsum lora le la loriaque lorem lorem ipsum lora le la loriaque lorem</p>
+
+        </li>
+
+        <li class="block-footer links">
+            <ul>
+                <li><a href="" class="fa fa-twitter fa-4x on fa-square-o"></a></li>
+                <li><a href="" class="fa fa-github fa-4x on fa-square-o"></a></li>
+                <li><a href="" class="fa fa-linkedin fa-4x on fa-square-o"></a></li>
+                <li><a href="" class="fa fa-rss fa-4x on fa-square-o"></a></li>
+            </ul>
+        </li>
+
+        <li class="block-footer">
+            {{ form_contact }}
+        </li>
+    </ul>
+
+
+
+
+
+</footer>

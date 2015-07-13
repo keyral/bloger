@@ -1,0 +1,37 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region div.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ *
+ * @ingroup themeable
+ */
+#}
+{% set classes = [
+'region',
+'region-' ~ region|clean_class,
+'cd-main-header',
+] %}
+
+<header {{ attributes.addClass(classes) }}">
+    <a href="/"><img id="logo" src="/themes/custom/blog/images/K.jpg" alt="Logo"></a>
+    <nav class="cd-nav">
+        <ul class="cd-header-buttons">
+            <li> test 1</li>
+            <li> test 1</li>
+            <li> test 1</li>
+            <li> test 1</li>
+            <li> test 1</li>
+            <li> test 1</li>
+            <li> test 1</li>
+        </ul>
+    </nav>
+</header>
+
