@@ -1,0 +1,5 @@
+name: olympe
+type: module
+description: Centre du controle du blog
+core: 8.x
+package: Other
