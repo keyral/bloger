@@ -4,10 +4,6 @@ base:
     theme:
       stylesheets/styles.css: {}
 
-  js:
-    js/header.js: {}
-    lib/crayon/crayon.min.js: {}
-
   dependencies:
     - core/matchmedia
     - core/jquery

@@ -1,13 +1,21 @@
 
 @import "compass";
-@import "partial/_reset";
+@import "vendor/KNACSS/sass/knacss";
 @import "partial/_variables";
 @import "partial/_mixing";
 @import "regions/_header";
 @import "regions/_footer";
 @import "assets/_listing";
 @import "assets/_all";
+
 //lib icon
 @import "../lib/Font-Awesome-master/css/font-awesome.min.css";
 
+
+
+
+
+body{
+  background-color: $grey;
+}
 

@@ -19,19 +19,12 @@
 'region-' ~ region|clean_class,
 'cd-main-header',
 ] %}
-
 <header {{ attributes.addClass(classes) }}">
-    <a href="/"><img id="logo" src="/themes/custom/blog/images/K.jpg" alt="Logo"></a>
-    <nav class="cd-nav">
-        <ul class="cd-header-buttons">
-            <li> test 1</li>
-            <li> test 1</li>
-            <li> test 1</li>
-            <li> test 1</li>
-            <li> test 1</li>
-            <li> test 1</li>
-            <li> test 1</li>
-        </ul>
+<div class="contenaire">
+    <a href="/"><img id="logo" src="/themes/blog/images/K.jpg" alt="Logo"></a>
+    <nav>
+        {{ menu_header }}
     </nav>
+</div>
 </header>
 

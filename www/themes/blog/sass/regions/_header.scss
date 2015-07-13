@@ -1,5 +1,5 @@
 
-.user-logged-in {
+.user-authenticated {
   header {
     top:80px;
   }
@@ -7,7 +7,15 @@
 
 header {
   height:65px;
-  position: absolute;
+  position: fixed;
   top: 0;
   background-color: $white;
+  width:100%;
+  box-shadow: 0 0 1px $grey;
+
+  #logo {
+    height:60px;
+    padding: 2px 5px 2px 20px;
+  }
+
 }
