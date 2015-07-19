@@ -49,4 +49,14 @@ function blog_preprocess_page(&$variables) {
  */
 function blog_preprocess_menu(&$variables) {
   $variables['attributes']['class'][] = 'clearfix';
+
+  $debug = 1;
+  if($variables['theme_hook_original'] == 'menu__menu_header') {
+
+    $variables['attributes']['class'][] = 'row';
+    $variables['attributes']['class'][] = 'menu_header';
+
+  }
+
+
 }

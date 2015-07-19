@@ -2,7 +2,7 @@ base:
   version: VERSION
   css:
     theme:
-      stylesheets/styles.css: {}
+      css/styles.css: {}
 
   dependencies:
     - core/matchmedia
