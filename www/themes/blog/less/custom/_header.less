@@ -1,0 +1,45 @@
+header {
+  width: 100%;
+  background-color: @white;
+
+  #logo {
+    width: 65px;
+  }
+
+  nav {
+    text-align: left;
+    min-height: 65px;
+    ul {
+
+      li.menu-item {
+
+        a {
+          font-size: 1.50em;
+          font-family: 'Open Sans Condensed', sans-serif;
+          width: 100%;
+          padding: 28px 0 15px;
+          display: block;
+          text-align: center;
+          text-decoration: none;
+          color: @grey;
+
+          &:hover {
+            color: @orange;
+            border-bottom: solid 3px @orange;
+          }
+
+          &.is-active {
+            color: @black;
+            border-bottom: solid 3px @black;
+
+            &:hover {
+              color: @orange;
+              border-bottom: solid 3px @orange;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
