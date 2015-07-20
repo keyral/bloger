@@ -18,12 +18,11 @@ class HomePage extends ControllerBase {
    * View.
    *
    * @return string
-   *   Return Hello string.
    */
   public function view() {
     return [
         '#type' => 'markup',
-        '#markup' => $this->t('Implement method: view')
+        '#markup' => $this->t('lol')
     ];
   }
 }

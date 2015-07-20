@@ -22,5 +22,7 @@ sites/simpletest
 # Cache sass
 */.sass-cache
 www/themes/blog/.sass-cache
+www/theme/blog/css/
+www/theme/blog/node_modules/
 # Remove PHPSTORM
 .idea

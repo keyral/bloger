@@ -2,7 +2,7 @@ olympe.home_page_view:
   path: 'homepage'
   defaults:
     _controller: '\Drupal\olympe\Controller\HomePage::view'
-    _title: 'Homepage'
+    _title: ''
   requirements:
     _permission: 'access content'
 

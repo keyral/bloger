@@ -70,10 +70,11 @@
 
   {{ page.help }}
 
-  <main role="main">
-    <a id="main-content" tabindex="-1"></a>
+  {% if action_links %}
+    <nav class="action-links">{{ action_links }}</nav>
+  {% endif %}
 
-    <div class="layout-content">
+  <main id="main" role="main" class="contenaire">
       {{ page.highlighted }}
 
       {{ title_prefix }}
@@ -84,24 +85,8 @@
 
       {{ tabs }}
 
-      {% if action_links %}
-        <nav class="action-links">{{ action_links }}</nav>
-      {% endif %}
 
       {{ page.content }}
-    </div>{# /.layout-content #}
-
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
-    {% endif %}
-
-    {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar_second }}
-      </aside>
-    {% endif %}
 
   </main>
 
@@ -111,4 +96,4 @@
     </footer>
   {% endif %}
 
-</div>{# /.layout-container #}
+</div>

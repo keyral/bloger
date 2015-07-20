@@ -2047,6 +2047,10 @@ header nav ul li.menu-item a.is-active:hover {
   color: #ffa500;
   border-bottom: solid 3px #ffa500;
 }
+#main {
+  padding: 30px;
+  color: #000000;
+}
 body {
   background-color: #303030;
   color: white;

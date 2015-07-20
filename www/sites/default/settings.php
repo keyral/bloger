@@ -695,3 +695,50 @@ $databases['default']['default'] = array (
 $settings['install_profile'] = 'standard';
 $config_directories['active'] = 'sites/default/files/config_p3y3YJYWpbUvVBBJ-_WW5popfG-EVod5D79QNFFSjQ_XT1joSHlkcUOcbGcfqG0WIhDn2o-hIg/active';
 $config_directories['staging'] = 'sites/default/files/config_p3y3YJYWpbUvVBBJ-_WW5popfG-EVod5D79QNFFSjQ_XT1joSHlkcUOcbGcfqG0WIhDn2o-hIg/staging';
+
+
+
+/**
+ * Enable local development services.
+ */
+$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml';
+
+/**
+ * Show all error messages, with backtrace information.
+ */
+$config['system.logging']['error_level'] = 'verbose';
+
+/**
+ * Disable CSS and JS aggregation.
+ */
+$config['system.performance']['css']['preprocess'] = FALSE;
+$config['system.performance']['js']['preprocess'] = FALSE;
+
+/**
+ * Disable the render cache (this includes the page cache).
+ *
+ * This setting disables the render cache by using the Null cache back-end
+ * defined by the development.services.yml file above.
+ *
+ * Do not use this setting until after the site is installed.
+ */
+$settings['cache']['bins']['render'] = 'cache.backend.null';
+
+/**
+ * Allow test modules and themes to be installed.
+ *
+ * Drupal ignores test modules and themes by default for performance reasons.
+ * During development it can be useful to install test extensions for debugging
+ * purposes.
+ */
+$settings['extension_discovery_scan_tests'] = TRUE;
+
+/**
+ * Enable access to rebuild.php.
+ *
+ * This setting can be enabled to allow Drupal's php and database cached
+ * storage to be cleared via the rebuild.php page. Access to this page can also
+ * be gained by generating a query string from rebuild_token_calculator.sh and
+ * using these parameters in a request to rebuild.php.
+ */
+$settings['rebuild_access'] = TRUE;
